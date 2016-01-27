@@ -15,6 +15,8 @@ error_reporting(E_ALL);
 
 $environment = 'development';
 
+//loading routes
+
 $router = new \League\Route\RouteCollection;
 
 $router->addRoute('GET', '/', 'Skybet\Controllers\MainController::ListAll'); // Classname::methodName
