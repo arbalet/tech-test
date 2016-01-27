@@ -171,6 +171,14 @@ class File implements FileInterface
 		return $content;
 	}
 
+
+	/**
+	*
+	*	Save changes to file
+	*	@return NULL 
+	*
+	**/
+
 	public function Commit()
 	{
 		$data = $this->data;
