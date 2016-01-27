@@ -22,6 +22,13 @@ class File implements FileInterface
 		$this->fileName = $config->getFilePath()."/".$config->getFileName();
 	}
 
+	/**
+	*
+	*	Load all info from file
+	*	@return json
+	*
+	**/
+
 	public function Load()
 	{
 		
@@ -34,6 +41,15 @@ class File implements FileInterface
 
 		return json_decode($data, true);
 	}
+
+	/**
+	*
+	*	Save record into file
+	*	@param $firstname string
+	*	@param $surname string
+	*	@return NULL
+	*
+	**/
 
 	public function Save($firstname,$surname)
 	{
@@ -52,6 +68,14 @@ class File implements FileInterface
 		@fclose();
 	}
 
+	/**
+	*
+	*	Delete record from file
+	*	@param $id integer
+	*	@return NULL
+	*
+	**/
+
 	public function Delete($id)
 	{
 
@@ -66,10 +90,19 @@ class File implements FileInterface
 			@fputs($f,json_encode($data));
 			@fclose();
 		} else {
-			throw new Exception("Error: Empty value", 1);
-			
+			throw new Exception("Error: Empty value", 1);			
 		}
 	}
+
+	/**
+	*
+	*	Update record in file
+	*	@param $firstname string
+	*	@param $surname string
+	*	@param $id integer
+	*	@return NULL
+	*
+	**/
 
 	public function Update($firstname,$surname,$id)
 	{
