@@ -2,6 +2,8 @@
 
 namespace Skybet\Config;
 
+// config is in singleton
+
 class Config
 {
 	private static $path = "/../storage";
@@ -38,11 +40,20 @@ class Config
     {
     }
 
+    /**
+    *   Return file path
+    *
+    */
+
 	public function getFilePath()
 	{
 		return self::getDir()."/".self::$path;
 	}
 
+    /**
+    *   Return file name
+    *
+    */
 	public function getFileName()
 	{
 		return self::$file;
