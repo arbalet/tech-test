@@ -171,7 +171,7 @@ class File implements FileInterface
 		return $content;
 	}
 
-	private function Commit()
+	public function Commit()
 	{
 		$data = $this->data;
 

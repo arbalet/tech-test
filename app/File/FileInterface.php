@@ -11,4 +11,6 @@ interface FileInterface {
 	public function Delete($id);
 
 	public function Update($fistname,$surname,$id);
+
+	public function Commit();
 }
