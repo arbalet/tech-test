@@ -1,0 +1,29 @@
+{
+  "name": "Skybet Tech Test",
+  "description": "Skybet Tech Test",
+  "keywords": ["tech test", "sky bet"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Plamen Nankov",
+      "email": "arbalet@escom.bg",
+      "role": "PHP Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "phpunit/phpunit": ">=4.8.21",
+    "journey/views": "^0.1.0",
+    "patricklouys/http": "^1.3",
+    "jariberg/vardump": "^1.4",
+    "league/route": "^1.2"
+  },
+  "autoload": {
+    "classmap": [
+      "config" 
+    ],
+    "psr-4": {
+      "Skybet\\": ["app/"]
+    }
+  }
+}

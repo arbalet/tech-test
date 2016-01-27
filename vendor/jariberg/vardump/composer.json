@@ -1,0 +1,19 @@
+{
+    "name": "jariberg/vardump",
+    "type": "library",
+    "description": "zero dependency replacement of php var_dump and print_r with beautiful styling and support for cli-mode",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jari Berg"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "classmap": ["src/"],
+        "files": ["./autoload.php"]
+    }
+}
